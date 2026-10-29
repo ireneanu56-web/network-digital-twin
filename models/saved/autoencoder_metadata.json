@@ -1,0 +1,5 @@
+{
+  "reconstruction_threshold": 1.4591646194458008,
+  "threshold_method": "95th percentile of normal validation errors",
+  "normal_validation_samples": 7
+}

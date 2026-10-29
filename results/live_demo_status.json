@@ -1,0 +1,36 @@
+{
+  "stage": "COMPLETED",
+  "status": "completed",
+  "message": "Experiment completed and results appended.",
+  "timestamp": "2026-10-29T17:16:12.702488+00:00",
+  "source": "h1",
+  "destination": "h4",
+  "current_path": "h1 → s1 → s3 → s4 → h4",
+  "fault_type": "latency_50ms",
+  "detected_fault": "LATENCY_FAULT",
+  "fault_link": "s1 -> s2",
+  "metrics": {
+    "packet_loss": 0.0,
+    "avg_rtt": 15.235,
+    "jitter": 27.031,
+    "ping_output": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=64 time=69.3 ms\n64 bytes from 10.0.0.4: icmp_seq=2 ttl=64 time=1.40 ms\n64 bytes from 10.0.0.4: icmp_seq=3 ttl=64 time=3.43 ms\n64 bytes from 10.0.0.4: icmp_seq=4 ttl=64 time=0.908 ms\n64 bytes from 10.0.0.4: icmp_seq=5 ttl=64 time=1.17 ms\n\n--- 10.0.0.4 ping statistics ---\n5 packets transmitted, 5 received, 0% packet loss, time 3998ms\nrtt min/avg/max/mdev = 0.908/15.235/69.269/27.031 ms\n",
+    "throughput_mbps": 10.141104425011557,
+    "retransmissions": 0
+  },
+  "metric_states": {
+    "throughput_before": 19.903594332817935,
+    "rtt_before": 17.427,
+    "packet_loss_before": 0.0,
+    "throughput_fault": 2.3112569372830256,
+    "rtt_fault": 51.626,
+    "packet_loss_fault": 0.0,
+    "throughput_after": 10.141104425011557,
+    "rtt_after": 15.235,
+    "packet_loss_after": 0.0
+  },
+  "original_path": "h1 → s1 → s2 → s4 → h4",
+  "recovered_path": "h1 → s1 → s3 → s4 → h4",
+  "decision_time": 7.0801841389984475,
+  "recovery_time": 20.923667336996004,
+  "rerouting_success": true
+}

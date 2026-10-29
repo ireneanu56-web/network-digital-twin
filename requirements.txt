@@ -1,0 +1,9 @@
+pandas
+streamlit>=1.37
+numpy
+scikit-learn
+matplotlib
+networkx
+tensorflow-cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0+cpu
